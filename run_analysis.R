@@ -12,7 +12,7 @@ y_train <- read.table("train//y_train.txt", col.names = "code")
 X <- rbind(x_train, x_test)
 Y <- rbind(y_train, y_test)
 subject <- rbind(subject_train, subject_test)
-merged <- cbind(Subject, Y, X)
+merged <- cbind(subject, Y, X)
 
 colnames(merged)[3:563] <- features[[2]]
 
